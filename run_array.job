@@ -3,7 +3,8 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=5
 #SBATCH --array=0-23
+#SBATCH --output=logs/array-%j.log  
 
 source .venv/bin/activate
 
-fulgora -model test.cif -cpu 5 -memory 10Gb -outdir output -basis ${SLURM_ARRAY_TASK_ID} -name NAG-${SLURM_ARRAY_TASK_ID}
+fulgora -model cif_files/NAG.cif -cpu 5 -memory 10Gb -outdir output -basis ${SLURM_ARRAY_TASK_ID} -name NAG

@@ -28,4 +28,4 @@ def check_files(base_directory: Path):
     checkpoint_path = base_directory / CHECKPOINT_NAME
     assert (
         checkpoint_path.exists()
-    ), f"Log file could not be found, indicating {jobname} job didn't finish."
+    ), f"Checkpoint file could not be found, indicating {jobname} job didn't finish."
