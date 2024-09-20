@@ -1,4 +1,4 @@
-# Fulgora
+# Fulgora <img src="https://github.com/user-attachments/assets/b3ab0b3b-f462-4830-b77d-681a78b6858c" alt="logo" width="100"/>  
 
 **Fulgora** is a Python wrapper for Gaussian that allows users to pass in a Crystallographic Information File (CIF) and compute the total energy using Gaussian's quantum chemistry calculations.
 
