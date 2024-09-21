@@ -2,7 +2,7 @@ basis_sets = [
     "STO-3G",
     "3-21G",
     "6-31G(d)",
-    "6-31G(d,p)",
+    "6-31G**",
     "LANL2DZ",
     "cc-pVDZ",
     "cc-pVTZ",
@@ -22,5 +22,5 @@ basis_sets = [
     "Def2QZVP",
     "Def2SVPP",
     "Def2TZVPP",
-    "Def2QZVPP"
+    "Def2QZVPP",
 ]

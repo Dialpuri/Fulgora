@@ -26,3 +26,4 @@ jobs = 4
 
 [project.scripts]
 fulgora = "fulgora.cli:main"
+fulgora-vis = "fulgora.visualise.energy:main"

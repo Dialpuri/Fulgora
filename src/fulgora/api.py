@@ -6,6 +6,10 @@ from fulgora.output import parser, writer
 from fulgora.names import GJF_NAME
 
 from pathlib import Path
+from shutil import which
+
+assert which("g16"), "Gaussian is not loaded"
+
 
 if __name__ == "__main__":
     job_params = arguments.JobParameters(

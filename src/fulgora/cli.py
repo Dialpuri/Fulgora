@@ -10,6 +10,9 @@ from fulgora.names import GJF_NAME
 from fulgora.basis_sets import basis_sets
 
 from pathlib import Path
+from shutil import which
+
+assert which("g16"), "Gaussian is not loaded"
 
 
 def parse_arguments() -> argparse.Namespace:
@@ -52,9 +55,9 @@ def write_jobfile(jobfile: str, directory: Path):
 
 def main():
     args = parse_arguments()
-    if re.match(r'\d+', args.basis): 
+    if re.match(r"\d+", args.basis):
         basis_index = int(args.basis)
-        if basis_index > len(basis_sets): 
+        if basis_index > len(basis_sets):
             raise RuntimeError("Unknown basis set number")
         args.basis = basis_sets[basis_index]
         args.name = f"{args.name}-{args.basis}"
